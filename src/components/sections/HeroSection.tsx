@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section style={{ padding: 40 }}>
+    <section style={{ maxWidth: 960, margin: "0 auto", padding: "80px 24px" }}>
       <p>Alex’s Portfolio</p>
       <h1>
         I am a Front-End Developer <br />
