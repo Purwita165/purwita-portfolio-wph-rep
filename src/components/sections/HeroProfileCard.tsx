@@ -1,48 +1,39 @@
-"use client";
-
-import HeroProfileCard from "./HeroProfileCard";
-
-export default function HeroSection() {
+export default function HeroProfileCard() {
   return (
-    <section className="bg-neutral-900 text-white px-6 pt-24 pb-20">
-      <div className="mx-auto max-w-[360px] flex flex-col items-center text-center gap-6">
+    <div
+      style={{
+        width: "100%",
+        maxWidth: "360px",
+        background: "#e9eff6",
+        borderRadius: "16px",
+        padding: "24px",
+        boxSizing: "border-box",
+      }}
+    >
+      {/* Avatar */}
+      <div
+        style={{
+          width: "96px",
+          height: "96px",
+          borderRadius: "50%",
+          background: "#cfd8e3",
+          marginBottom: "16px",
+        }}
+      />
 
-        {/* Chip */}
-        <div className="inline-flex items-center rounded-full bg-neutral-800 px-4 py-1 text-sm text-neutral-300">
-          Alex’s Portfolio
-        </div>
+      {/* Name */}
+      <h3 style={{ margin: "0 0 4px 0" }}>Alex Johnson</h3>
 
-        {/* Heading */}
-        <h1 className="text-3xl font-extrabold leading-tight">
-          I am a{" "}
-          <span className="block bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-            Front-End Developer
-          </span>
-          <span className="block">& Web Programming Instructor</span>
-        </h1>
+      {/* Role */}
+      <p style={{ margin: "0 0 12px 0", color: "#555" }}>
+        Front-End Developer
+      </p>
 
-        {/* Description */}
-        <p className="text-sm text-neutral-400 leading-relaxed">
-          Hi, I’m Alex, a passionate web developer with over{" "}
-          <span className="text-neutral-200 font-medium">
-            3 years of experience
-          </span>{" "}
-          in creating responsive websites and teaching modern web technologies.
-        </p>
-
-        {/* CTA */}
-        <a
-          href="#portfolio"
-          className="mt-2 inline-flex items-center justify-center w-full py-3 rounded-full
-                     bg-gradient-to-r from-pink-500 to-purple-600 font-semibold"
-        >
-          View Portfolio
-        </a>
-
-        {/* Profile Card */}
-        <HeroProfileCard />
-
-      </div>
-    </section>
+      {/* Short bio */}
+      <p style={{ margin: 0, fontSize: "14px", color: "#666" }}>
+        Focused on building clean UI, scalable components, and smooth user
+        experiences.
+      </p>
+    </div>
   );
 }
