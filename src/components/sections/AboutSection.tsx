@@ -1,12 +1,13 @@
+import { SECTION_STYLE, CONTAINER_STYLE } from "@/components/ui/sectionStyles";
+
 export default function AboutSection() {
   return (
     <section
       id="about"
-      className="bg-neutral-500 text-neutral-100 py-24"
-    >
-      <div className="px-6 max-w-md mx-auto space-y-12">
+      style={SECTION_STYLE}>
+      <div style={CONTAINER_STYLE}>
         {/* Section Header */}
-        <div className="space-y-2 text-center">
+        <div className="space-y-2 text-center md:text-left">
           <h2 className="font-bold">
             About Me
           </h2>

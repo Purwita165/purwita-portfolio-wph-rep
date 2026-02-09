@@ -1,3 +1,5 @@
+import { SECTION_STYLE, CONTAINER_STYLE } from "@/components/ui/sectionStyles";
+
 const timelineData = [
   {
     year: "2022",
@@ -15,20 +17,11 @@ const timelineData = [
 
 export default function TimelineSection() {
   return (
-    <section
-      style={{
-        maxWidth: "960px",
-        margin: "0 auto",
-        padding: "96px 24px",
-        backgroundColor: "#fafafa",
-      }}
-    >
+    <section style={SECTION_STYLE}>
       {/* Section Header */}
-      <div style={{ marginBottom: "48px" }}>
+      <div style={CONTAINER_STYLE}>
         <h2 style={{ marginBottom: "8px" }}>Experience</h2>
-        <p style={{ color: "#6b7280" }}>
-          My professional journey so far
-        </p>
+        <p style={{ color: "#6b7280" }}>My professional journey so far</p>
       </div>
 
       {/* Timeline List */}
@@ -60,9 +53,7 @@ export default function TimelineSection() {
 
             <h3 style={{ margin: "8px 0" }}>{item.title}</h3>
 
-            <p style={{ margin: 0, color: "#4b5563" }}>
-              {item.description}
-            </p>
+            <p style={{ margin: 0, color: "#4b5563" }}>{item.description}</p>
           </div>
         ))}
       </div>

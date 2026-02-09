@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { SECTION_STYLE, CONTAINER_STYLE } from "@/components/ui/sectionStyles";
 
 const skills = [
   { name: "HTML", value: 100 },
@@ -15,9 +16,8 @@ export default function SkillSection() {
   return (
     <section
       id="skills"
-      className="bg-neutral-500 text-neutral-100 py-24 overflow-hidden"
-    >
-      <div className="px-6 max-w-md mx-auto space-y-16">
+      style={SECTION_STYLE}>
+      <div style={CONTAINER_STYLE}>
         {/* Section Header */}
         <div className="text-center space-y-4">
           <h2 className="font-bold">My Core Skill</h2>
